@@ -9,7 +9,7 @@ export default function Home() {
 				<div className="border-b-[1px] border-[#12121233]">
 					<Navbar />
 				</div>
-				<div className="max-w-[1240px] m-auto pt-20">
+				<div className="max-w-[1240px] m-auto pt-10 lg:pt-20">
 					<Landing />
 				</div>
 			</div>
