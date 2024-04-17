@@ -8,7 +8,7 @@ export default function Landing() {
 				<h1 className="text-[32px] w-[343px] lg:w-[599px] lg:text-[56px] font-[700] leading-[40px] lg:leading-[64px] mb-1 lg:mb-4 text-[#121212]">
 					Streamline your audit process with AuditMe
 				</h1>
-				<p className="text-[16px] lg:text-[18px] w-[352px] lg:w-[469px] leading-[28px] font-[500] text-[#121212] mb-1 lg:mb-4">
+				<p className="text-[18px] lg:text-[18px] w-[352px] lg:w-[469px] leading-[28px] font-[400] lg:font-[500] text-[#121212] mb-1 lg:mb-4">
 					Empower your business with smart auditing
 					solutions, unlock the power of digital auditing
 					for SMEs. Elevate, simplify and secure your audits
