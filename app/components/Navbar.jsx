@@ -46,12 +46,18 @@ function Navbar() {
 						</button>
 					</div>
 					<div className="flex flex-col justify-start items-start h-full py-4">
-						<Link href="/" passHref>
+						<Link
+							href="https://auditme-app.vercel.app/"
+							passHref
+						>
 							<p className="px-8 py-2 hover:bg-gray-200">
 								Auditor
 							</p>
 						</Link>
-						<Link href="/" passHref>
+						<Link
+							href="https://auditme-app.vercel.app/"
+							passHref
+						>
 							<p className="px-8 py-2 hover:bg-gray-200">
 								Log In
 							</p>
@@ -60,7 +66,7 @@ function Navbar() {
 				</div>
 				<div className="hidden lg:flex items-center gap-[16px]">
 					<Link
-						href="/"
+						href="https://auditme-app.vercel.app/"
 						className="px-[24px] py-[8px] border border-[#121212] rounded-md hover:bg-[#121212] hover:text-white"
 					>
 						<p className="font-semibold text-[18px] hover:text-white">
@@ -68,7 +74,7 @@ function Navbar() {
 						</p>
 					</Link>
 					<Link
-						href="/"
+						href="https://auditme-app.vercel.app/"
 						className="px-[24px] py-[8px] border text-white bg-[#121212] rounded-md hover:bg-[#121212] hover:text-[#f8f8f8]"
 					>
 						<p className="font-semibold text-[18px] hover:text-white">
