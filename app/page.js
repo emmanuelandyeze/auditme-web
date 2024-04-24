@@ -5,7 +5,7 @@ import SubLanding from './components/SubLanding';
 
 export default function Home() {
 	return (
-		<main className="min-h-screen bg-[#f8f8f8]">
+		<main className="min-h-screen bg-[#ffffff]">
 			<div>
 				<div className="border-b-[1px] border-[#12121233]">
 					<Navbar />
