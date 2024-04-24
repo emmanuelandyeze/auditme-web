@@ -7,6 +7,7 @@ import {
 import { CiSaveUp2 } from 'react-icons/ci';
 import { BiSolidReport } from 'react-icons/bi';
 import { RiUpload2Fill } from 'react-icons/ri';
+import { LuFileBarChart } from 'react-icons/lu';
 
 
 const Process = () => {
@@ -58,7 +59,7 @@ const Process = () => {
 						className="block lg:hidden"
 					/>
 					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
-						<BiSolidReport
+						<LuFileBarChart
 							color="#004AAD"
 							size={54}
 							className="text-center mb-5"
