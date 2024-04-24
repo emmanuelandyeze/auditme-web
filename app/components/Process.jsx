@@ -17,7 +17,7 @@ const Process = () => {
 					How it works
 				</h1>
 				<div className="flex flex-col lg:flex-row items-center justify-center gap-[20px]">
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-md border-[1px] border-[#12121233]">
+					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
 						<RiUpload2Fill
 							color="#004AAD"
 							size={54}
@@ -37,7 +37,7 @@ const Process = () => {
 						color="#BDBDBD"
 						className="block lg:hidden"
 					/>
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-md border-[1px] border-[#12121233]">
+					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
 						<FaRecycle
 							color="#004AAD"
 							size={54}
@@ -57,7 +57,7 @@ const Process = () => {
 						color="#BDBDBD"
 						className="block lg:hidden"
 					/>
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-md border-[1px] border-[#12121233]">
+					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
 						<BiSolidReport
 							color="#004AAD"
 							size={54}
