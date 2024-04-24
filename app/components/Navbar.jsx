@@ -33,7 +33,7 @@ function Navbar() {
 					/>
 				</div>
 				<div
-					className={`lg:hidden fixed top-0 right-0 h-screen w-[70%] pt-1 bg-white transition-transform transform ${
+					className={`lg:hidden fixed top-0 right-0 h-screen w-[70%] pt-1 bg-white z-50 transition-transform transform ${
 						isNavOpen ? 'translate-x-0' : 'translate-x-full'
 					}`}
 				>
