@@ -10,14 +10,16 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-[#ffffff]">
 			<div>
-				<div className="border-b-[1px] border-[#12121233]">
+				<div className="">
 					<Navbar />
 				</div>
-				<div className=" pt-10 lg:pt-20">
-					<div className="max-w-[1240px] m-auto">
-						<Landing />
+				<div className="">
+					<div className="bg-[#F8FBFF]  pt-10 lg:pt-20 pb-10 lg:pb-20">
+						<div className="max-w-[1240px] m-auto">
+							<Landing />
+						</div>
 					</div>
-					<div className="max-w-[1240px] m-auto">
+					<div className="max-w-[1240px] pt-10 md:pt-0 m-auto">
 						<SubLanding />
 					</div>
 

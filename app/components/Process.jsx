@@ -2,71 +2,185 @@ import React from 'react';
 import {
 	FaCircleArrowDown,
 	FaCircleArrowRight,
-    FaRecycle,
+	FaRecycle,
 } from 'react-icons/fa6';
 import { CiSaveUp2 } from 'react-icons/ci';
 import { BiSolidReport } from 'react-icons/bi';
 import { RiUpload2Fill } from 'react-icons/ri';
 import { LuFileBarChart } from 'react-icons/lu';
 
-
 const Process = () => {
 	return (
-		<div className="bg-[#004AAD0A] mt-10 pt-5 pb-10 lg:pt-10 lg:pb-20">
+		<div className="bg-[#FFFAF9] mt-10 pt-5 pb-10 lg:pt-10 lg:pb-20">
 			<div className="items-center justify-center align-middle flex flex-col gap-5 lg:gap-10">
 				<h1 className="font-[600] text-[24px] lg:text-[40px] text-[#121212]">
 					How it works
 				</h1>
 				<div className="flex flex-col lg:flex-row items-center justify-center gap-[20px]">
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
-						<RiUpload2Fill
-							color="#004AAD"
-							size={54}
-							className="text-center mb-5"
-						/>
-						<h1 className="fofnt-[400] text-[20px] text-center w-40">
-							Upload documents
-						</h1>
+					<div className="relative h-[300px] w-[300px] rounded-[24px] overflow-hidden border-[1px] border-[#12121233]">
+						<div className="absolute inset-0 bg-[url('/images/audit.png')] bg-cover bg-center"></div>
+						<div className="absolute inset-0 bg-[#004AAD] opacity-90"></div>
+						<div className="relative flex flex-col items-center justify-center h-full z-10">
+							<svg
+								width="51"
+								height="55"
+								viewBox="0 0 51 55"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M14.1389 19.5018V24.9299H5.80556V49.356H44.6944V24.9299H36.3611V19.5018H44.6944C46.1679 19.5018 47.5809 20.0737 48.6228 21.0917C49.6647 22.1096 50.25 23.4902 50.25 24.9299V49.356C50.25 50.7956 49.6647 52.1762 48.6228 53.1942C47.5809 54.2121 46.1679 54.784 44.6944 54.784H5.80556C4.33213 54.784 2.91905 54.2121 1.87718 53.1942C0.835316 52.1762 0.25 50.7956 0.25 49.356V24.9299C0.25 23.4902 0.835316 22.1096 1.87718 21.0917C2.91905 20.0737 4.33213 19.5018 5.80556 19.5018H14.1389ZM27.7056 1.7766L37.0361 10.8903C37.5573 11.3995 37.8502 12.0902 37.8502 12.8104C37.8502 13.5306 37.5573 14.2213 37.0361 14.7306C36.5149 15.2398 35.808 15.5259 35.0708 15.5259C34.3337 15.5259 33.6268 15.2398 33.1056 14.7306L28.0278 9.76666V35.7859C28.0278 36.5057 27.7351 37.196 27.2142 37.705C26.6932 38.214 25.9867 38.4999 25.25 38.4999C24.5133 38.4999 23.8067 38.214 23.2858 37.705C22.7649 37.196 22.4722 36.5057 22.4722 35.7859V9.76666L17.3944 14.7306C17.1364 14.9827 16.83 15.1828 16.4928 15.3192C16.1556 15.4557 15.7942 15.5259 15.4292 15.5259C15.0642 15.5259 14.7028 15.4557 14.3656 15.3192C14.0284 15.1828 13.722 14.9827 13.4639 14.7306C13.2058 14.4784 13.0011 14.1791 12.8614 13.8496C12.7217 13.5201 12.6498 13.167 12.6498 12.8104C12.6498 12.4538 12.7217 12.1007 12.8614 11.7712C13.0011 11.4418 13.2058 11.1424 13.4639 10.8903L22.7972 1.7766C23.4483 1.14102 24.331 0.783997 25.2514 0.783997C26.1718 0.783997 27.0545 1.14102 27.7056 1.7766Z"
+									fill="white"
+								/>
+							</svg>
+
+							<h1 className="font-[400] text-[20px] mt-5 text-center w-40 text-white">
+								Upload documents
+							</h1>
+						</div>
 					</div>
-					<FaCircleArrowRight
-						size={34}
-						color="#BDBDBD"
-						className="hidden lg:block"
-					/>
-					<FaCircleArrowDown
-						size={34}
-						color="#BDBDBD"
-						className="block lg:hidden"
-					/>
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
-						<FaRecycle
-							color="#004AAD"
-							size={54}
-							className="text-center mb-5"
-						/>
-						<h1 className="fofnt-[400] text-[20px] text-center w-40">
-							Process documents
-						</h1>
+					<div className="hidden md:flex">
+						<svg
+							width="34"
+							height="34"
+							viewBox="0 0 34 34"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="17"
+								cy="17"
+								r="16.5"
+								fill="white"
+								stroke="#004AAD"
+							/>
+							<path
+								d="M18.3333 10L25 17M25 17L18.3333 24M25 17L9 17"
+								stroke="#004AAD"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
 					</div>
-					<FaCircleArrowRight
-						size={34}
-						color="#BDBDBD"
-						className="hidden lg:block"
-					/>
-					<FaCircleArrowDown
-						size={34}
-						color="#BDBDBD"
-						className="block lg:hidden"
-					/>
-					<div className="h-[300px] flex flex-col items-center align-middle justify-center bg-[#fff] w-[300px] rounded-[24px] border-[1px] border-[#12121233]">
-						<LuFileBarChart
-							color="#004AAD"
-							size={54}
-							className="text-center mb-5"
-						/>
-						<h1 className="fofnt-[400] text-[20px] text-center w-36">
-							Audit report in 7 days
-						</h1>
+					<div className="block lg:hidden">
+						<svg
+							width="34"
+							height="34"
+							viewBox="0 0 34 34"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="17"
+								cy="17"
+								r="16.5"
+								transform="rotate(90 17 17)"
+								fill="white"
+								stroke="#004AAD"
+							/>
+							<path
+								d="M24 18.3333L17 25M17 25L10 18.3333M17 25L17 9"
+								stroke="#004AAD"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+					<div className="relative h-[300px] w-[300px] rounded-[24px] overflow-hidden border-[1px] border-[#12121233]">
+						<div className="absolute inset-0 bg-[url('/images/audit2.png')] bg-cover bg-center"></div>
+						<div className="absolute inset-0 bg-[#004AAD] opacity-90"></div>
+						<div className="relative flex flex-col items-center justify-center h-full z-10">
+							<svg
+								width="50"
+								height="54"
+								viewBox="0 0 50 54"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12.7082 33.3334C12.0562 33.3334 11.4309 33.6143 10.9699 34.1144C10.5089 34.6145 10.2499 35.2928 10.2499 36V40.752C7.08126 36.8651 5.33254 31.8554 5.33319 26.6667C5.33213 25.8824 5.37482 25.0988 5.46103 24.32C5.50793 23.9683 5.48954 23.6099 5.40692 23.266C5.32431 22.922 5.17914 22.5995 4.97996 22.3172C4.78078 22.035 4.53159 21.7989 4.24706 21.6226C3.96253 21.4464 3.64838 21.3336 3.32309 21.2909C2.9978 21.2483 2.66794 21.2766 2.35288 21.3742C2.03782 21.4718 1.74393 21.6367 1.48848 21.8593C1.23303 22.0819 1.02118 22.3576 0.865377 22.6703C0.709576 22.983 0.61297 23.3263 0.581236 23.68C0.470203 24.671 0.415197 25.6684 0.416527 26.6667C0.419882 33.0299 2.52827 39.1804 6.35832 44H2.87486C2.22287 44 1.59758 44.281 1.13656 44.7811C0.67553 45.2812 0.416527 45.9595 0.416527 46.6667C0.416527 47.374 0.67553 48.0522 1.13656 48.5523C1.59758 49.0524 2.22287 49.3334 2.87486 49.3334H12.7082C13.0926 49.328 13.4704 49.223 13.8099 49.0273C14.1494 48.8316 14.4409 48.5507 14.6601 48.208C14.6872 48.168 14.724 48.136 14.7511 48.0934C14.7683 48.0667 14.7683 48.0347 14.783 48.008C14.9001 47.7936 14.9879 47.5618 15.0436 47.32C15.0805 47.184 15.1068 47.0449 15.1223 46.904C15.1297 46.824 15.1665 46.752 15.1665 46.6667V36C15.1665 35.2928 14.9075 34.6145 14.4465 34.1144C13.9855 33.6143 13.3602 33.3334 12.7082 33.3334ZM16.3957 10.6667H12.0125C15.5966 7.22941 20.2158 5.33251 24.9999 5.33338C25.723 5.33166 26.4455 5.37887 27.1632 5.47471C27.8109 5.55958 28.4632 5.36185 28.9766 4.92502C29.49 4.48818 29.8223 3.84803 29.9005 3.14538C29.9788 2.44273 29.7965 1.73515 29.3938 1.17829C28.9911 0.621435 28.4009 0.260917 27.7532 0.176048C26.8396 0.056853 25.9201 -0.00192228 24.9999 4.79274e-05C19.1338 0.003687 13.4638 2.29075 9.02069 6.44538V2.66671C9.02069 1.95947 8.76169 1.28119 8.30066 0.781096C7.83964 0.280999 7.21435 4.79274e-05 6.56236 4.79274e-05C5.91037 4.79274e-05 5.28508 0.280999 4.82406 0.781096C4.36303 1.28119 4.10403 1.95947 4.10403 2.66671V13.3334C4.1192 13.5099 4.15133 13.6841 4.1999 13.8534C4.25917 14.1824 4.3769 14.4958 4.54653 14.776L4.57603 14.8214C4.73818 15.0772 4.94135 15.2994 5.17586 15.4774C5.2029 15.4987 5.21765 15.5307 5.24469 15.552C5.27911 15.5787 5.31844 15.5867 5.35532 15.608C5.49527 15.6991 5.64356 15.7742 5.79782 15.832C6.00483 15.9104 6.22067 15.9579 6.43944 15.9734C6.48369 15.9734 6.51811 16 6.56236 16H16.3957C17.0477 16 17.673 15.7191 18.134 15.219C18.595 14.7189 18.854 14.0406 18.854 13.3334C18.854 12.6261 18.595 11.9479 18.134 11.4478C17.673 10.9477 17.0477 10.6667 16.3957 10.6667ZM45.7974 39.4774C45.7379 39.1492 45.6202 38.8368 45.4507 38.5574L45.4237 38.512C45.2608 38.256 45.0568 38.0338 44.8214 37.856C44.7944 37.8347 44.7821 37.8027 44.7526 37.7814C44.728 37.7627 44.696 37.7627 44.669 37.744C44.357 37.5554 44.0151 37.4324 43.6611 37.3814C43.5824 37.3734 43.516 37.3334 43.4374 37.3334H33.604C32.952 37.3334 32.3267 37.6143 31.8657 38.1144C31.4047 38.6145 31.1457 39.2928 31.1457 40C31.1457 40.7073 31.4047 41.3856 31.8657 41.8857C32.3267 42.3858 32.952 42.6667 33.604 42.6667H37.9848C34.4014 46.1036 29.7831 48.0005 24.9999 48C24.2767 48.0009 23.5542 47.9528 22.8365 47.856C22.1888 47.7712 21.5365 47.9689 21.0231 48.4057C20.5098 48.8426 20.1774 49.4827 20.0992 50.1854C20.0209 50.888 20.2032 51.5956 20.6059 52.1525C21.0086 52.7093 21.5988 53.0698 22.2465 53.1547C23.1602 53.2739 24.0796 53.3336 24.9999 53.3334C30.8659 53.3297 36.5359 51.0427 40.979 46.888V50.6667C40.979 51.374 41.238 52.0522 41.6991 52.5523C42.1601 53.0524 42.7854 53.3334 43.4374 53.3334C44.0894 53.3334 44.7146 53.0524 45.1757 52.5523C45.6367 52.0522 45.8957 51.374 45.8957 50.6667V40C45.8797 39.8235 45.8468 39.6465 45.7974 39.4774ZM47.1249 9.33338C47.7768 9.33338 48.4021 9.05243 48.8632 8.55233C49.3242 8.05223 49.5832 7.37396 49.5832 6.66671C49.5832 5.95947 49.3242 5.28119 48.8632 4.7811C48.4021 4.281 47.7768 4.00005 47.1249 4.00005H37.2915C37.1313 4.01701 36.9731 4.05186 36.8195 4.10405L36.8023 4.10671C36.5043 4.17209 36.2205 4.29882 35.9665 4.48005L35.9173 4.51471C35.6824 4.6909 35.4784 4.91126 35.315 5.16538C35.2954 5.19205 35.2659 5.20805 35.2462 5.23738C35.229 5.26405 35.229 5.29871 35.2118 5.32805C35.0366 5.66865 34.9231 6.04249 34.8774 6.42938C34.8701 6.50938 34.8332 6.58138 34.8332 6.66671V17.3334C34.8332 18.0406 35.0922 18.7189 35.5532 19.219C36.0142 19.7191 36.6395 20 37.2915 20C37.9435 20 38.5688 19.7191 39.0298 19.219C39.4909 18.7189 39.7499 18.0406 39.7499 17.3334V12.5787C42.9184 16.4667 44.6671 21.4773 44.6665 26.6667C44.6668 27.4511 44.6233 28.2347 44.5362 29.0134C44.4585 29.7152 44.6405 30.4217 45.0424 30.9781C45.4442 31.5345 46.0331 31.8953 46.6799 31.9814C46.7794 31.994 46.8796 32.0003 46.9798 32C47.58 31.9989 48.159 31.7596 48.6078 31.3274C49.0565 30.8951 49.344 30.2997 49.416 29.6534C49.5279 28.6625 49.5837 27.665 49.5832 26.6667C49.5798 20.3036 47.4715 14.153 43.6414 9.33338H47.1249Z"
+									fill="white"
+								/>
+							</svg>
+
+							<h1 className="font-[400] text-[20px] mt-5 text-center w-40 text-white">
+								Process documents
+							</h1>
+						</div>
+					</div>
+					<div className="hidden md:flex">
+						<svg
+							width="34"
+							height="34"
+							viewBox="0 0 34 34"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="17"
+								cy="17"
+								r="16.5"
+								fill="white"
+								stroke="#004AAD"
+							/>
+							<path
+								d="M18.3333 10L25 17M25 17L18.3333 24M25 17L9 17"
+								stroke="#004AAD"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+					<div className="block lg:hidden">
+						<svg
+							width="34"
+							height="34"
+							viewBox="0 0 34 34"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="17"
+								cy="17"
+								r="16.5"
+								transform="rotate(90 17 17)"
+								fill="white"
+								stroke="#004AAD"
+							/>
+							<path
+								d="M24 18.3333L17 25M17 25L10 18.3333M17 25L17 9"
+								stroke="#004AAD"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+
+					<div className="relative h-[300px] w-[300px] rounded-[24px] overflow-hidden border-[1px] border-[#12121233]">
+						<div className="absolute inset-0 bg-[url('/images/audit3.png')] bg-cover bg-center"></div>
+						<div className="absolute inset-0 bg-[#004AAD] opacity-90"></div>
+						<div className="relative flex flex-col items-center justify-center h-full z-10">
+							<svg
+								width="44"
+								height="54"
+								viewBox="0 0 44 54"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M27.375 0H5.875C2.91875 0 0.5 2.43 0.5 5.4V48.6C0.5 51.57 2.91875 54 5.875 54H38.125C41.0812 54 43.5 51.57 43.5 48.6V16.2L27.375 0ZM38.125 48.6H5.875V5.4H24.6875V18.9H38.125V48.6ZM13.9375 29.7V45.9H8.5625V29.7H13.9375ZM30.0625 35.1V45.9H35.4375V35.1H30.0625ZM19.3125 24.3V45.9H24.6875V24.3H19.3125Z"
+									fill="white"
+								/>
+							</svg>
+
+							<h1 className="font-[400] text-[20px] mt-5 text-center w-40 text-white">
+								Audit report in 7 days
+							</h1>
+						</div>
 					</div>
 				</div>
 			</div>
