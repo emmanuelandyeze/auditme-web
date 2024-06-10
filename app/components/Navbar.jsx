@@ -4,9 +4,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaBars } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
+	 const [loginDropdownOpen, setLoginDropdownOpen] =
+			useState(false);
+		const [signupDropdownOpen, setSignupDropdownOpen] =
+			useState(false);
+
+		const toggleLoginDropdown = () =>
+			setLoginDropdownOpen(!loginDropdownOpen);
+		const toggleSignupDropdown = () =>
+			setSignupDropdownOpen(!signupDropdownOpen);
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -65,22 +75,50 @@ function Navbar() {
 					</div>
 				</div>
 				<div className="hidden lg:flex items-center gap-[16px]">
-					<Link
-						href="https://auditme-app.vercel.app/"
-						className="px-[24px] py-[8px] border border-[#121212] rounded-md hover:bg-[#121212] hover:text-white"
-					>
-						<p className="font-semibold text-[18px] hover:text-white">
-							Auditor
-						</p>
-					</Link>
-					<Link
-						href="https://auditme-app.vercel.app/"
-						className="px-[24px] py-[8px] border text-white bg-[#121212] rounded-md hover:bg-[#121212] hover:text-[#f8f8f8]"
-					>
-						<p className="font-semibold text-[18px] hover:text-white">
-							Log In
-						</p>
-					</Link>
+					<ul className="flex justify-around gap-5">
+						<li className="relative">
+							<button
+								onClick={toggleLoginDropdown}
+								className="text-black flex gap-1 items-center"
+							>
+								<p className="font-[500] text-[18px]">
+									Log in
+								</p>
+								<RiArrowDropDownLine size={24} />
+							</button>
+							{loginDropdownOpen && (
+								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
+									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+										SMEs
+									</li>
+									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+										Auditor
+									</li>
+								</ul>
+							)}
+						</li>
+						<li className="relative">
+							<button
+								onClick={toggleSignupDropdown}
+								className="text-black flex gap-1 items-center"
+							>
+								<p className="font-[500] text-[18px]">
+									Sign up
+								</p>
+								<RiArrowDropDownLine size={24} />
+							</button>
+							{signupDropdownOpen && (
+								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
+									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+										SMEs
+									</li>
+									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+										Auditor
+									</li>
+								</ul>
+							)}
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</div>
