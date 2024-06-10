@@ -94,7 +94,7 @@ export default function Landing() {
 						Log in as an SME
 					</Link>
 					<Link
-						href={'https://auditme-app-staging.vercel.app/'}
+						href={'https://auditme-app-staging.vercel.app/register'}
 						className="bg-[#fff] px-[24px] md:px-[32px] py-[10px] lg:px-[40px] lg:py-[16px] text-[#004AAD] rounded-lg text-[16px] md:text-[18px] font-[500] hover:bg-[#004AAD] border border-[#004AAD] hover:text-white leading-[28px]"
 					>
 						Sign up as an SME

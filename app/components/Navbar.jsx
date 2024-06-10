@@ -99,7 +99,7 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app-staging.vercel.app/login'
+											'https://auditme-app-staging.vercel.app/auditor/login'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -121,12 +121,24 @@ function Navbar() {
 							</button>
 							{signupDropdownOpen && (
 								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
-									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-										SMEs
-									</li>
-									<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-										Auditor
-									</li>
+									<Link
+										href={
+											'https://auditme-app-staging.vercel.app/register'
+										}
+									>
+										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+											SMEs
+										</li>
+									</Link>
+									<Link
+										href={
+											'https://auditme-app-staging.vercel.app/auditor/register'
+										}
+									>
+										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+											Auditor
+										</li>
+									</Link>
 								</ul>
 							)}
 						</li>
