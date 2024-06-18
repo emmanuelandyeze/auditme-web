@@ -132,7 +132,7 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app.vercel.app/auditor/register'
+											'https://auditme-app.vercel.app/auditor/register-auditor'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
