@@ -60,7 +60,7 @@ const Footer = () => {
 						</svg>
 
 						<p className="text-[14px] leading-[28px] text-left lg:text-center lg:text-[16px] text-[#fff]">
-							ploutospage38@gmail.com
+							auditmenigeria@gmail.com
 						</p>
 					</div>
 					<div className="flex flex-row gap-5 items-start lg:items-center">
