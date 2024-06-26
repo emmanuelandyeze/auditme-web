@@ -90,7 +90,7 @@ function Navbar() {
 								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
 									<Link
 										href={
-											'https://auditme-app-staging.vercel.app/login'
+											'https://auditme-app.vercel.app/login'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -99,7 +99,7 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app-staging.vercel.app/auditor/login'
+											'https://auditme-app.vercel.app/auditor/login'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -123,7 +123,7 @@ function Navbar() {
 								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
 									<Link
 										href={
-											'https://auditme-app-staging.vercel.app/register'
+											'https://auditme-app.vercel.app/register'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -132,7 +132,7 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app-staging.vercel.app/auditor/register'
+											'https://auditme-app.vercel.app/register-auditor'
 										}
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
