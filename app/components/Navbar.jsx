@@ -57,7 +57,8 @@ function Navbar() {
 					</div>
 					<div className="flex flex-col justify-start items-start h-full py-4">
 						<Link
-							href="https://auditme-app.vercel.app/auditor/login"
+
+							href="https://app.auditme.com.ng/auditor/login"
 							passHref
 						>
 							<p className="px-8 py-2 hover:bg-gray-200">
@@ -65,7 +66,8 @@ function Navbar() {
 							</p>
 						</Link>
 						<Link
-							href="https://auditme-app.vercel.app/login"
+
+							href="https://app.auditme.com.ng/login"
 							passHref
 						>
 							<p className="px-8 py-2 hover:bg-gray-200">
@@ -90,8 +92,9 @@ function Navbar() {
 								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
 									<Link
 										href={
-											'https://auditme-app.vercel.app/login'
+											'https://app.auditme.com.ng/login'
 										}
+										target="_blank"
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
 											SMEs
@@ -99,8 +102,9 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app.vercel.app/auditor/login'
+											'https://app.auditme.com.ng/auditor/login'
 										}
+										target="_blank"
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
 											Auditor
@@ -123,8 +127,9 @@ function Navbar() {
 								<ul className="absolute mt-2 w-40 bg-white border border-gray-200 shadow-lg">
 									<Link
 										href={
-											'https://auditme-app.vercel.app/register'
+											'https://app.auditme.com.ng/register'
 										}
+										target="_blank"
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
 											SMEs
@@ -132,8 +137,9 @@ function Navbar() {
 									</Link>
 									<Link
 										href={
-											'https://auditme-app.vercel.app/register-auditor'
+											'https://app.auditme.com.ng/register-auditor'
 										}
+										target='_blank'
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
 											Auditor
