@@ -57,6 +57,7 @@ function Navbar() {
 					</div>
 					<div className="flex flex-col justify-start items-start h-full py-4">
 						<Link
+
 							href="https://app.auditme.com.ng/auditor/login"
 							passHref
 						>
@@ -65,6 +66,7 @@ function Navbar() {
 							</p>
 						</Link>
 						<Link
+
 							href="https://app.auditme.com.ng/login"
 							passHref
 						>
