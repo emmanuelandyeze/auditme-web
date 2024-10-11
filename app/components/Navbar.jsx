@@ -71,7 +71,7 @@ function Navbar() {
 							passHref
 						>
 							<p className="px-8 py-2 hover:bg-gray-200">
-								SME Log In
+								Business Log In
 							</p>
 						</Link>
 					</div>
@@ -97,7 +97,7 @@ function Navbar() {
 										target="_blank"
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-											SMEs
+											Business
 										</li>
 									</Link>
 									<Link
@@ -132,7 +132,7 @@ function Navbar() {
 										target="_blank"
 									>
 										<li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-											SMEs
+											Business
 										</li>
 									</Link>
 									<Link

@@ -26,9 +26,8 @@ export default function SubLanding() {
 						</svg>
 					</div>
 					<span className="ml-2 lg:w-[273px] text-[16px] lg:text-[18px] leading-[24px] lg:leading-[32px] font-[400] text-[#000]">
-						Our user friendly platform connects SMEs with
-						expert auditors making audits efficient,
-						transparent, and secure.
+						With expert auditors, we make audits efficient,
+						transparent & secure.
 					</span>
 				</div>
 				<div className="hidden md:block">
@@ -78,9 +77,8 @@ export default function SubLanding() {
 						</svg>
 					</div>
 					<span className="ml-2 lg:w-[273px] text-[16px] lg:text-[18px]  leading-[24px] lg:leading-[32px] font-[400] text-[#000]">
-						With AuditMe, SMEs can easily upload documents
-						securely, track and generate comprehensive
-						reports.
+						Upload documents securely, track & generate
+						comprehensive reports.
 					</span>
 				</div>
 				<div className="hidden md:block">
@@ -129,9 +127,8 @@ export default function SubLanding() {
 					</div>
 
 					<span className="ml-2 lg:w-[273px] text-[16px] lg:text-[18px]  leading-[24px] lg:leading-[32px] font-[400] text-[#000]">
-						Our platform empowers SMEs to identify
-						opportunities for improvement, and make informed
-						business decisions.
+						We empowers businesses to make informed business
+						decisions.
 					</span>
 				</div>
 			</div>

@@ -9,16 +9,15 @@ export default function Landing() {
 	return (
 		<div className="flex flex-col lg:flex-row items-start lg:items-center px-5 bg-[#F8FBFF] md:px-5 lg:px-0 max-w-7xl mx-auto">
 			<div className="w-[381px] lg:w-2/3 pr-0 flex flex-col gap-[24px]">
-				<h1 className="text-[32px] w-[343px] lg:w-[599px] lg:text-[56px] font-[700] leading-[40px] lg:leading-[64px] mb-1 lg:mb-4 text-[#121212]">
-					Streamline your audit process with{' '}
-					<br className="block md:hidden" />
-					<span className="text-[#004AAD]">AuditMe</span>
+				<h1 className="text-[32px] w-[343px] lg:w-[599px] lg:text-[64px] font-[500] leading-[40px] lg:leading-[72px] mb-1 lg:mb-4 text-[#121212]">
+					Get your audited account in{' '}
+					<span className="text-[#004AAD]">7 days!</span>{' '}
+					<br className="block" />
+					{/* <span className=""> with AuditMe!</span> */}
 				</h1>
-				<p className="text-[18px] lg:text-[18px] w-[352px] lg:w-[469px] leading-[28px] font-[400] lg:font-[500] text-[#121212] mb-1 lg:mb-4">
-					Empower your business with smart auditing
-					solutions, unlock the power of digital auditing
-					for SMEs. Elevate, simplify and secure your audits
-					today.
+				<p className="text-[18px] lg:text-[16px] w-[352px] lg:w-[469px] leading-[28px] font-[400] lg:font-[400] text-[#121212] mb-1 lg:mb-4">
+					All audited statements are verified and prepared
+					by certified auditors.
 				</p>
 				<div className="mb-3 w-[90%] md:w-[490px] lg:mb-10 gap-[2px] md:gap-[24px] lg:gap-[56px] flex flex-row justify-between items-center">
 					<div className="gap-[1px] md:gap-[8px] flex flex-row items-center">
@@ -90,16 +89,16 @@ export default function Landing() {
 				</div>
 				<div className="flex gap-[12px] md:gap-3 items-center">
 					<Link
-						href={'https://app.auditme.com.ng/login'}
-						className="bg-[#004AAD] flex flex-col text-center justify-center md:px-[12px] w-[40%] md:w-[38%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-white rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] hover:text-white leading-[28px]"
+						href={'https://app.auditme.com.ng/register'}
+						className="bg-[#004AAD] flex flex-col text-center justify-center px-[10px] md:px-[4px] py-[10px] w-[45%] md:w-[40%] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-white rounded-lg text-[14px] md:text-[16px] font-[500] hover:bg-[#004AAD] hover:text-white leading-[28px]"
 					>
-						Log in as an SME
+						Sign up as a business
 					</Link>
 					<Link
-						href={'https://app.auditme.com.ng/register'}
-						className="bg-[#fff] flex flex-col text-center justify-center md:px-[2px] w-[40%] md:w-[41%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-[#004AAD] rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] border border-[#004AAD] hover:text-white leading-[28px]"
+						href={'https://app.auditme.com.ng/register-auditor'}
+						className="bg-[#fff] flex flex-col text-center justify-center px-[10px] md:px-[2px] w-[45%] md:w-[40%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-[#004AAD] rounded-lg text-[14px] md:text-[16px] font-[500] hover:bg-[#004AAD] border border-[#004AAD] hover:text-white leading-[28px]"
 					>
-						Sign up as an SME
+						Sign up as an auditor
 					</Link>
 				</div>
 			</div>
@@ -108,7 +107,7 @@ export default function Landing() {
 				style={{
 					position: 'relative',
 				}}
-				className="hidden md:block overflow-hidden h-[512px] object-fill w-[827px] rounded-[60px]"
+				className="hidden md:block overflow-hidden h-[512px] object-fill w-[627px] rounded-[60px]"
 			>
 				<Image
 					alt="App screenshot"
@@ -133,7 +132,6 @@ export default function Landing() {
 					className="object-cover"
 				/>
 			</div>
-			
 		</div>
 	);
 }
