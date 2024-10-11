@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image';
 import { MdCheckBox } from 'react-icons/md';
 import { FiUsers } from 'react-icons/fi';
 import Link from 'next/link';
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 export default function Landing() {
 	return (
@@ -89,13 +91,13 @@ export default function Landing() {
 				<div className="flex gap-[12px] md:gap-3 items-center">
 					<Link
 						href={'https://app.auditme.com.ng/login'}
-						className="bg-[#004AAD] flex flex-col text-center justify-center md:px-[32px] w-[40%] md:w-[30%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-white rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] hover:text-white leading-[28px]"
+						className="bg-[#004AAD] flex flex-col text-center justify-center md:px-[12px] w-[40%] md:w-[38%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-white rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] hover:text-white leading-[28px]"
 					>
 						Log in as an SME
 					</Link>
 					<Link
 						href={'https://app.auditme.com.ng/register'}
-						className="bg-[#fff] flex flex-col text-center justify-center md:px-[32px] w-[40%] md:w-[35%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-[#004AAD] rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] border border-[#004AAD] hover:text-white leading-[28px]"
+						className="bg-[#fff] flex flex-col text-center justify-center md:px-[2px] w-[40%] md:w-[41%] py-[10px] h-[3.5rem] lg:px-[40px] lg:py-[16px] text-[#004AAD] rounded-lg text-[14px] md:text-[18px] font-[500] hover:bg-[#004AAD] border border-[#004AAD] hover:text-white leading-[28px]"
 					>
 						Sign up as an SME
 					</Link>
@@ -106,11 +108,11 @@ export default function Landing() {
 				style={{
 					position: 'relative',
 				}}
-				className="hidden md:block overflow-hidden h-[512px] object-fill w-[527px] rounded-[60px]"
+				className="hidden md:block overflow-hidden h-[512px] object-fill w-[827px] rounded-[60px]"
 			>
 				<Image
 					alt="App screenshot"
-					src="/images/landing.jpeg"
+					src="/images/landing2.jpeg"
 					fill={true}
 					priority
 					className="object-cover"
@@ -125,12 +127,13 @@ export default function Landing() {
 			>
 				<Image
 					alt="App screenshot"
-					src="/images/landing.jpeg"
+					src="/images/landing2.jpeg"
 					fill={true}
 					priority
 					className="object-cover"
 				/>
 			</div>
+			
 		</div>
 	);
 }

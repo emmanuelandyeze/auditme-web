@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
@@ -5,8 +6,15 @@ import SubLanding from './components/SubLanding';
 import Process from './components/Process';
 import Workflow from './components/Workflow';
 import Footer from './components/Footer';
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { useRef } from 'react';
 
 export default function Home() {
+	const tawkMessengerRef = useRef();
+	const onLoad = () => {
+		tawkMessengerRef.current.showWidget();
+		console.log('working!!');
+	};
 	return (
 		<main className="min-h-screen max-w-full overflow-hidden bg-[#ffffff]">
 			<div>
@@ -23,6 +31,11 @@ export default function Home() {
 						<SubLanding />
 					</div>
 
+					<TawkMessengerReact
+						propertyId="6708e2652480f5b4f58bda03"
+						widgetId="1i9tb8nn3"
+						// onLoad={onLoad}
+					/>
 					<Process />
 					<Workflow />
 					<Footer />
